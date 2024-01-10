@@ -68,6 +68,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="home.html" />
+    <Content Include="homea.html" />
+    <Content Include="images\12thfail.jpg" />
+    <Content Include="images\shirt_1.png" />
+    <Content Include="player.html" />
+    <Content Include="videos\mov.mp4" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
