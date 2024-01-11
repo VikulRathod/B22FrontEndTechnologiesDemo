@@ -1,0 +1,28 @@
+﻿.blue {
+    background-color: lightgreen;
+}
+
+h1 {
+    color: red;
+    background-color: yellow;
+    border: 1px dashed black;
+    text-align: center;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    border-bottom: 1px solid black;
+    padding:10px;
+}
+
+    ul li {
+        display: inline;
+        padding: 20px;
+        cursor:pointer;
+    }
+
+div {
+    display: inline;
+}
