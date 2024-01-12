@@ -70,6 +70,9 @@
     <Content Include="css\home.css" />
     <Content Include="home.html" />
     <Content Include="homea.html" />
+    <Content Include="homeb.html" />
+    <Content Include="homec.html" />
+    <Content Include="images\3.jpg" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
