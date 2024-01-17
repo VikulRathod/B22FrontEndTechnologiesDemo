@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1>Home A Page Content</h1>
+    <label id="lblMessage"></label>
+
+    <script>
+        document.write("Welcome To JavaScript !! <br/>");
+        var a = 10;
+        document.write(a + '<br/>'); // 10
+        a = "Ajay";
+        document.write(a + '<br/>'); // Ajay
+        var s = "Vishal";
+        document.write(s + '<br/>');
+        var b = true;
+        document.write(b + '<br/>');
+
+        console.log('This is information');
+        console.warn('This is a warning');
+        console.error('This is an error');
+
+        alert('Message displyed using alert() function');
+
+        confirm('Are you sure, you want to leave this page?');
+
+        document.getElementById('lblMessage').innerText = 'Text assigned in script';
+
+        // window.close();
+    </script>
+</body>
+</html>
