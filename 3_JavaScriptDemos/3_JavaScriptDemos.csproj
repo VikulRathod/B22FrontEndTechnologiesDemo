@@ -68,9 +68,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="addition.html" />
+    <Content Include="conditionalstatements.html" />
     <Content Include="datatypes.html" />
     <Content Include="homea.html" />
+    <Content Include="operators.html" />
+    <Content Include="Scripts\conditionalstatements.js" />
     <Content Include="Scripts\datatypes.js" />
+    <Content Include="Scripts\operators.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

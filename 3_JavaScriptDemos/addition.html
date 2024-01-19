@@ -37,6 +37,15 @@
             var first = document.getElementById('first').value;
             var second = document.getElementById('second').value;
 
+            if (first == '' || second == '') {
+                alert('Please enter input numbers');
+                return;
+            }
+            else if (isNaN(first) || isNaN(second)) {
+                alert('Please enter valid input numbers');
+                return;
+            }
+
             var result = parseInt(first) + parseInt(second);
 
             document.getElementById('result').value = result;
