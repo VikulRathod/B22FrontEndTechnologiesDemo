@@ -42,8 +42,8 @@ switch (parseInt(num)) {
 
 function funHighest() {
 
-    //var var1;
-    //alert(`var1 : ${var1}`); // undefined
+    // var var1 = null;
+    // alert(`var1 : ${var1}`); // undefined
 
     var a = document.getElementById('first').value;
     var b = document.getElementById('second').value;
