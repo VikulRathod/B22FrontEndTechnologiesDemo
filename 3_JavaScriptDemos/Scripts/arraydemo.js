@@ -184,3 +184,73 @@ function compareLogic(a, b) {
         return 0;
     }
 }
+
+numbers2 = [1, 2, 3, 4, 5, 6];
+document.write('*** ALL ITEMS ***<br/>');
+for (var i = 0; i < numbers2.length; i++) {
+    document.write(`${numbers2[i]} `);
+}
+document.write('<br/>');
+
+var result = numbers2.filter(filterLogic1);
+
+document.write('*** ALL ITEMS filter(filterLogic1) ***<br/>');
+for (var i = 0; i < result.length; i++) {
+    document.write(`${result[i]} `);
+}
+document.write('<br/>');
+
+function filterLogic1(value, index, array) {
+    if (value % 2 == 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+numbers2 = [1, 4, 3, 2, 2, 4];
+document.write('*** ALL ITEMS ***<br/>');
+for (var i = 0; i < numbers2.length; i++) {
+    document.write(`${numbers2[i]} `);
+}
+document.write('<br/>');
+// unique items
+
+result = numbers2.filter(uniqueLogic);
+document.write('*** ALL ITEMS AFTER filter(uniqueLogic) ***<br/>');
+for (var i = 0; i < result.length; i++) {
+    document.write(`${result[i]} `);
+}
+document.write('<br/>');
+
+function uniqueLogic(value, index, array) {
+    var i = array.indexOf(value);
+
+    if (isNaN(value)) {
+        return false;
+    }
+
+    if (i == index) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+numbers2 = [1, 2, 3, 4, 5, 6];
+document.write('*** ALL ITEMS ***<br/>');
+for (var i = 0; i < numbers2.length; i++) {
+    document.write(`${numbers2[i]} `);
+}
+document.write('<br/>');
+
+result = numbers2.map(mapLogic);
+document.write('*** ALL ITEMS AFTER map(mapLogic) ***<br/>');
+for (var i = 0; i < result.length; i++) {
+    document.write(`${result[i]} `);
+}
+document.write('<br/>');
+
+function mapLogic(value, index, array) {
+    return value * value;
+}

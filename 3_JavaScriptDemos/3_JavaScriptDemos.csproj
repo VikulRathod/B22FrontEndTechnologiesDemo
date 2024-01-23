@@ -71,12 +71,14 @@
     <Content Include="arraydemo.html" />
     <Content Include="conditionalstatements.html" />
     <Content Include="datatypes.html" />
+    <Content Include="functions.html" />
     <Content Include="homea.html" />
     <Content Include="loops.html" />
     <Content Include="operators.html" />
     <Content Include="Scripts\arraydemo.js" />
     <Content Include="Scripts\conditionalstatements.js" />
     <Content Include="Scripts\datatypes.js" />
+    <Content Include="Scripts\functions.js" />
     <Content Include="Scripts\loops.js" />
     <Content Include="Scripts\operators.js" />
     <Content Include="Web.config" />
