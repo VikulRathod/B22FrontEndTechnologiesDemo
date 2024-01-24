@@ -223,6 +223,11 @@ for (var i = 0; i < result.length; i++) {
 }
 document.write('<br/>');
 
+
+// 1, 4, 3, 2, 2, 4
+// 0, 1, 2, 3, 4, 5
+// array.indexOf(4); => 1
+
 function uniqueLogic(value, index, array) {
     var i = array.indexOf(value);
 

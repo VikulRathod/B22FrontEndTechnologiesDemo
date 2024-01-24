@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="addition.html" />
     <Content Include="arraydemo.html" />
+    <Content Include="closurefunction.html" />
     <Content Include="conditionalstatements.html" />
     <Content Include="datatypes.html" />
     <Content Include="functions.html" />
@@ -76,11 +77,14 @@
     <Content Include="loops.html" />
     <Content Include="operators.html" />
     <Content Include="Scripts\arraydemo.js" />
+    <Content Include="Scripts\closurefunction.js" />
     <Content Include="Scripts\conditionalstatements.js" />
     <Content Include="Scripts\datatypes.js" />
     <Content Include="Scripts\functions.js" />
     <Content Include="Scripts\loops.js" />
     <Content Include="Scripts\operators.js" />
+    <Content Include="Scripts\variables.js" />
+    <Content Include="variables.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
