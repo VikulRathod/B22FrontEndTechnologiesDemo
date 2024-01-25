@@ -72,18 +72,29 @@
     <Content Include="closurefunction.html" />
     <Content Include="conditionalstatements.html" />
     <Content Include="datatypes.html" />
+    <Content Include="dates.html" />
+    <Content Include="errorhandling.html" />
     <Content Include="functions.html" />
     <Content Include="homea.html" />
+    <Content Include="Images\1.jpg" />
+    <Content Include="Images\2.png" />
+    <Content Include="Images\3.jpg" />
     <Content Include="loops.html" />
     <Content Include="operators.html" />
     <Content Include="Scripts\arraydemo.js" />
     <Content Include="Scripts\closurefunction.js" />
     <Content Include="Scripts\conditionalstatements.js" />
     <Content Include="Scripts\datatypes.js" />
+    <Content Include="Scripts\dates.js" />
+    <Content Include="Scripts\errorhandling.js" />
     <Content Include="Scripts\functions.js" />
     <Content Include="Scripts\loops.js" />
     <Content Include="Scripts\operators.js" />
+    <Content Include="Scripts\slideshow.js" />
+    <Content Include="Scripts\timingevents.js" />
     <Content Include="Scripts\variables.js" />
+    <Content Include="slideshow.html" />
+    <Content Include="timingevents.html" />
     <Content Include="variables.html" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -99,6 +110,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
