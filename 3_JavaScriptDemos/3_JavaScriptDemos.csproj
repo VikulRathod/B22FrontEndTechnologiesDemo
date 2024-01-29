@@ -74,6 +74,7 @@
     <Content Include="datatypes.html" />
     <Content Include="dates.html" />
     <Content Include="errorhandling.html" />
+    <Content Include="events.html" />
     <Content Include="functions.html" />
     <Content Include="homea.html" />
     <Content Include="Images\1.jpg" />
@@ -87,6 +88,7 @@
     <Content Include="Scripts\datatypes.js" />
     <Content Include="Scripts\dates.js" />
     <Content Include="Scripts\errorhandling.js" />
+    <Content Include="Scripts\events.js" />
     <Content Include="Scripts\functions.js" />
     <Content Include="Scripts\loops.js" />
     <Content Include="Scripts\operators.js" />
