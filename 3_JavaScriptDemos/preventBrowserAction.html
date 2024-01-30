@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body oncontextmenu="return false;" onblur="closeWindow()">
+    <h2>Prevent Browser Default Actions</h2>
+
+    <div oncopy="return false;">
+        <h3>JavaScript Tutorial</h3>
+        <p>JavaScript is a popular client side scripting language</p>
+    </div>
+
+    Account Number : <input type="text" onpaste="return false;"/><br />
+
+    <br />
+    <a href="http://www.google.com" target="_blank" onclick="return false;">Visit Google</a>
+
+    <script src="Scripts/preventBrowserAction.js"></script>
+</body>
+</html>

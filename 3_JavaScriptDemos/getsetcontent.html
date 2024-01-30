@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    <p>First Paragraph</p>
+    <p name="second">Second Paragraph</p>
+    <p>Third Paragraph</p>
+    <input type="button" value="Change Style" onclick="changeParaStyle()"/>
+
+    <h2>Get Set Content</h2>
+
+    Password: <input type="password" id="password" />
+    <input type="checkbox" id="chkshowhide" onchange="pwdShowHide()" />
+    <br /><br />
+
+    <input type="text" id="txt1" /><br />
+    <p id="p1">Paragraph text</p>
+    <div id="div1">
+        <span>Span Content</span>
+        <a id="a1">Visit Google</a>
+    </div>
+    <hr />
+    <input type="button" value="Get Content" onclick="getContent()" /> |
+    <input type="button" value="Set Content" onclick="setContent()" />
+    <br />
+    <input type="text" id="txt2" />
+    <p id="p2"></p>
+    <div id="div2"></div>
+
+
+    <script src="Scripts/getsetcontent.js"></script>
+</body>
+</html>
