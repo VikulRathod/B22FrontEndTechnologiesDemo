@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h2>Details Page</h2>
+    <table>
+        <tr>
+            <td>Name</td>
+            <td>
+                <label id="lblName"></label>
+            </td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td>
+                <label id="lblEmail"></label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="create.html">Back To Create</a>
+            </td>
+        </tr>
+    </table>
+    <script>
+
+         // getting data from browser
+
+        //document.getElementById('lblName').innerText =
+        //    sessionStorage.getItem('empname');
+
+        //document.getElementById('lblEmail').innerText =
+        //    sessionStorage.getItem('empemail');
+
+        document.getElementById('lblName').innerText =
+            localStorage.getItem('sname');
+
+        document.getElementById('lblEmail').innerText =
+            localStorage.getItem('semail');
+    </script>
+</body>
+</html>

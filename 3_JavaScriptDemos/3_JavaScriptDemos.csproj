@@ -71,8 +71,10 @@
     <Content Include="arraydemo.html" />
     <Content Include="closurefunction.html" />
     <Content Include="conditionalstatements.html" />
+    <Content Include="create.html" />
     <Content Include="datatypes.html" />
     <Content Include="dates.html" />
+    <Content Include="details.html" />
     <Content Include="errorhandling.html" />
     <Content Include="eventbubbling.html" />
     <Content Include="events.html" />
@@ -86,6 +88,7 @@
     <Content Include="loops.html" />
     <Content Include="operators.html" />
     <Content Include="preventBrowserAction.html" />
+    <Content Include="redirection.html" />
     <Content Include="Scripts\arraydemo.js" />
     <Content Include="Scripts\closurefunction.js" />
     <Content Include="Scripts\conditionalstatements.js" />
@@ -100,10 +103,14 @@
     <Content Include="Scripts\loops.js" />
     <Content Include="Scripts\operators.js" />
     <Content Include="Scripts\preventBrowserAction.js" />
+    <Content Include="Scripts\redirection.js" />
     <Content Include="Scripts\slideshow.js" />
+    <Content Include="Scripts\stringfunctions.js" />
+    <Content Include="Scripts\stringfunctions.min.js" />
     <Content Include="Scripts\timingevents.js" />
     <Content Include="Scripts\variables.js" />
     <Content Include="slideshow.html" />
+    <Content Include="stringfunctions.html" />
     <Content Include="timingevents.html" />
     <Content Include="variables.html" />
     <Content Include="Web.config" />

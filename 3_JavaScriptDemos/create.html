@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h2>Create Page</h2>
+    <table>
+        <tr>
+            <td>Name</td>
+            <td>
+                <input type="text" id="name" />
+            </td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td>
+                <input type="text" id="email" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="Redirect To Details" onclick="detailsPage()" />
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        function detailsPage() {
+            var n = document.getElementById('name').value;
+            var e = document.getElementById('email').value;
+
+            // setting data on browser
+
+            //sessionStorage.setItem('empname', n);
+            //sessionStorage.setItem('empemail', e);
+
+            localStorage.setItem('sname', n);
+            localStorage.setItem('semail', e);
+
+            window.open('details.html', '_self');
+        }
+    </script>
+</body>
+</html>
