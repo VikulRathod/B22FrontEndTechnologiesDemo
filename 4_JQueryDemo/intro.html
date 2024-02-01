@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <!--<script src="Scripts/jQuery.min.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        // document.getElementById('heading').style.color = 'red';
+
+        // ready function syntax 1
+        //$(document).ready(function () {
+        //    document.getElementById('heading').style.color = 'red';
+        //});
+
+        //// ready function syntax 2
+        //$(function () {
+        //    document.getElementById('heading').style.color = 'red';
+        //    document.getElementById('heading').style.background = 'yellow';
+        //});
+
+        /*$.noConflict(); // jQuery will not support $*/
+
+        $(function () {
+            $('#heading').css('color', 'white');
+            $('#heading').css('background-color', 'red');
+        });
+
+        //jQuery(function () {
+        //    jQuery('#heading').css('color', 'white');
+        //    jQuery('#heading').css('background-color', 'green');
+        //});
+
+        //Rajmata = $.noConflict(); // jQuery will not support $
+
+        //Rajmata(function () {
+        //    Rajmata('#heading').css('color', 'white');
+        //    Rajmata('#heading').css('background-color', 'green');
+        //});
+
+    </script>
+</head>
+<body>
+    <h2 id="heading">JQuery Introduction</h2>
+
+    
+</body>
+</html>
