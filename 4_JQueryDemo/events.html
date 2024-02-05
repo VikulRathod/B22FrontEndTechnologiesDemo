@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="Scripts/jQuery.min.js"></script>
+</head>
+<body>
+    <h2>Events Demo</h2>
+
+    <input type="text" id="txt"/>
+    <br /><br />
+    <label id="lbl"></label>
+    <br /><br />
+    <input type="button" value="Click Me!!!" id="btn" />
+
+    <script>
+        $(function () {
+            //$('#btn').click(function () {
+            //    $(this).hide();
+            //});
+
+            //$('#btn').mouseenter(function () {
+            //    $(this).css('background-color', 'red');
+            //});
+            //$('#btn').mouseleave(function () {
+            //    $(this).css('background-color', 'gray');
+            //});
+
+            //// hover function -> it handle both over & out event
+            //$('#btn').hover(function () {
+            //    $(this).css('color', 'red');
+            //}, function () {
+            //    $(this).css('color', 'black');
+            //});
+
+            //// on function -> registering multiple events at once
+            //$('#btn').on('click', function () {
+            //    $(this).hide();
+            //});
+
+            $('#btn').on({
+                click: function () { $(this).css('background-color','lightgreen'); },
+                mouseenter: setCss,
+                mouseleave: function () {
+                    $(this).css('color', 'black');
+                },
+                dblclick: function () {
+                    $(this).attr('value', 'You Clicked Me!!');
+                }
+            });
+
+            function setCss() {
+                $(this).css('color', 'green');
+            }
+
+            $('#txt').focus(function () {
+                $(this).css('background-color', 'green');
+            });
+
+            $('#txt').blur(function () {
+                $(this).css('background-color', 'red');
+            });
+
+            $('#txt').keyup(function () {
+                // $(this).css('background-color', 'red');
+                // var txt = document.getElementById('txt').value;
+                var val = $(this).val();
+                $('#lbl').text(val);
+            });
+
+            $(document).scroll(function () {
+                alert('Started Scrolling...');
+            });
+        });
+    </script>
+</body>
+</html>

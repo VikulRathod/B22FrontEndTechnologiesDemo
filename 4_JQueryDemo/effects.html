@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+    <script src="Scripts/jQuery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <style>
+        #div1 {
+            background-color: red;
+            width: 30%;
+            padding: 20px 0 20px 10px;
+            height: 150px;
+            border: 1px solid black;
+            border-radius: 10px;
+            display: none;
+        }
+
+        button {
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h2>Effects Demo</h2>
+
+    <button>Click Me!!!</button> <br /><br />
+    <div id="div1">
+        jQuery is a JavaScript Library. <br />
+
+        jQuery greatly simplifies JavaScript programming. <br />
+
+        jQuery is easy to learn.
+    </div>
+
+    <script>
+        $(function () {
+            $('button').click(function () {
+                // $('#div1').hide(); // to hide element
+                // $('#div1').show(); // to show element
+                // document.getElementById('div1').style.display = 'block';
+                // $('#div1').toggle(); // to show & hide
+
+                //$('#div1').show(1000, function () {
+                //    alert('show effect complted');
+                //}); // to show element
+
+                // fade in, fade out effects
+                // $('#div1').fadeIn(10000);
+                // $('#div1').fadeOut(10000);
+                // $('#div1').fadeToggle();
+                //$('#div1').fadeTo(1000, function () {
+                //    alert('effect conpleted..');
+                //}, 0.5);
+
+                //$('#div1').fadeTo(1000, 0.2, function () {
+                //    alert('Effect Completed..');
+                //});
+
+                // slide down, slide up, slide toggle effect
+
+                // $('#div1').slideDown(2000);
+                // $('#div1').slideUp(2000);
+                // $('#div1').slideToggle(2000);
+                //$('#div1').slideToggle(2000, function () {
+                //    $('button').hide();
+                //});
+
+                // animate() function
+                //$('#div1').animate({ width: '+=100px' });
+                //$('#div1').animate({ height: '+=100px' });
+                //$('#div1').animate({ width: '-=100px' });
+                //$('#div1').animate({ height: '-=100px' });
+
+                //$('#div1').animate({
+                //    marginLeft: '200px',
+                //    width: '+=200px',
+                //    fontSize: '28px',
+                //    backgroundColor: "gray",
+                //    color: "white"
+                //});
+
+                // $('#div1').slideUp(5000);
+
+                // setInterval(stopAnimate, 2000);
+
+                //$('#div1').slideDown(3000);
+                //$('#div1').css('background-color', 'skyblue');
+                //$('#div1').slideUp(3000);
+                //$('#div1').slideDown(3000);
+
+                //$('#div1').slideDown(3000)
+                //.css('background-color', 'skyblue')
+                //.slideUp(3000)
+                //.slideDown(3000);
+
+                $('#div1').slideDown(3000, function () {
+                    $(this).css('background-color', 'skyblue');
+                })
+                    .slideUp(3000)
+                    .slideDown(3000);
+
+            });
+
+            function stopAnimate() {
+                $('#div1').stop();
+            }
+        });
+    </script>
+</body>
+</html>
