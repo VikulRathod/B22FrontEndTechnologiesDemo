@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        .myClass{
+            background-color:gray;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="myClass">Add Remove CSS Classes</h2>
+
+    <input type="button" value="Click Me!!!" id="btn" /> |
+    <input type="button" value="Get Set Style" id="btn2" />
+
+    <script src="Scripts/jQuery.min.js"></script>
+    <script>
+        $(function () {
+            $('#btn').click(function () {
+                // $('h2').addClass('myClass');
+                // $('h2').removeClass('myClass');
+                $('h2').toggleClass('myClass');
+            });
+
+            $('#btn2').click(function () {
+                // get css properties
+                //var v1 = $('h2').css('color');
+                //alert(v1);
+                //v1 = $('h2').css('font-family');
+                //alert(v1);
+
+                // set css properties
+                $('h2').css('text-decoration', 'underline');
+
+                $('h2').css({
+                    'border': '5px dashed red',
+                    'text-align': 'center',
+                    'cursor':'pointer'
+                });
+
+            });
+
+            //setInterval(changeStyle, 3000);
+
+            //function changeStyle() {
+            //    $('h2').css('text-decoration', 'underline');
+
+            //    $('h2').css({
+            //        'border': '5px dashed red',
+            //        'text-align': 'center',
+            //        'cursor': 'pointer'
+            //    });
+            //}
+        });
+    </script>
+</body>
+</html>

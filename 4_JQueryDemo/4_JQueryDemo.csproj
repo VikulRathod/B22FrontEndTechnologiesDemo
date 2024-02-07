@@ -67,8 +67,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="addelements.html" />
+    <Content Include="cssClasses.html" />
     <Content Include="effects.html" />
     <Content Include="events.html" />
+    <Content Include="getsetattributes.html" />
+    <Content Include="getsetcontent.html" />
     <Content Include="intro.html" />
     <Content Include="Scripts\jQuery.min.js" />
     <Content Include="selectors.html" />
