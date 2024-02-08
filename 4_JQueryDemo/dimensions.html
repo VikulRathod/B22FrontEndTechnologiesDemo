@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <style>
+        div {
+            border: 2px solid black;
+            padding: 100px;
+            /*margin: 100px;*/
+        }
+        span{
+            border: 10px solid red;
+            padding:40px;
+            margin:50px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Dimensions Demo</h2>
+
+    <div>
+        <span id="span1">
+            SPAN CONTENT
+        </span>
+    </div>
+    <hr />
+    <textarea rows="10" cols="100" id="result"></textarea>
+   
+
+    <script src="Scripts/jQuery.min.js"></script>
+
+    <script>
+
+        $(function () {
+
+            var w = $('#span1').width();
+            var original = $('#result').val();
+            $('#result').val(`${original}\n width() : ${w}`);
+
+            w = $('#span1').innerWidth();
+            original = $('#result').val();
+            $('#result').val(`${original}\n innerWidth() : ${w}`);
+
+            w = $('#span1').outerWidth();
+            original = $('#result').val();
+            $('#result').val(`${original}\n outerWidth() : ${w}`);
+
+            w = $('#span1').outerWidth(true);
+            original = $('#result').val();
+            $('#result').val(`${original}\n outerWidth(true) : ${w}`);
+
+            var h = $('#span1').height();
+            original = $('#result').val();
+            $('#result').val(`${original}\n height() : ${h}`);
+
+            h = $('#span1').innerHeight();
+            original = $('#result').val();
+            $('#result').val(`${original}\n innerHeight() : ${h}`);
+
+            h = $('#span1').outerHeight();
+            original = $('#result').val();
+            $('#result').val(`${original}\n outerHeight() : ${h}`);
+
+            h = $('#span1').outerHeight(true);
+            original = $('#result').val();
+            $('#result').val(`${original}\n outerHeight(true) : ${h}`);
+
+        });
+
+    </script>
+</body>
+</html>
