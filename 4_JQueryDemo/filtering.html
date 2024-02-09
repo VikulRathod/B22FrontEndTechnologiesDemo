@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h2>Filtering Demo</h2>
+
+    Name : <input type="text" id="input" /> <hr />
+    <ul id="names"></ul>
+
+    <input type="button" value="Click Me !!" id="btn" /><hr />
+
+    <p class="blue">First Paragraph</p>
+    <p>Second Paragraph</p>
+    <p>Third Paragraph</p>
+    <p class="blue">Fourth Paragraph</p>
+
+    <script src="Scripts/jQuery.min.js"></script>
+
+    <script>
+        $(function () {
+            $('#btn').click(function () {
+                // $('p').css('background-color', 'yellow');
+                // $('p:first').css('background-color', 'yellow');
+                // $('p').first().css('background-color', 'yellow');
+                // $('p').last().css('background-color', 'yellow');
+                // $('p').eq(2).css('background-color', 'yellow');
+                // $('p').filter('.blue').css('background-color', 'yellow');
+                $('p').not('.blue').css('background-color', 'yellow');
+            });
+
+            var names = ['ajay', 'chetan', 'vishal', 'ganesh'];
+            var lis = '';
+            for (var name of names) {
+                lis += `<li>${name}</li>`;
+            }
+            $('#names').html(lis);
+
+            $('#input').keyup(function () {
+                var input = $(this).val();
+                var lis = '';
+                for (var name of names) {
+                    var index = name.indexOf(input);
+                    if (index > -1) {
+                        lis += `<li>${name}</li>`;
+                    }
+                    $('#names').html(lis);
+                }
+            });
+        });
+    </script>
+
+
+</body>
+</html>

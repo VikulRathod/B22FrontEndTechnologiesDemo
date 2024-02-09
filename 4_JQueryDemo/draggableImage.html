@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+    <style>
+        #target {
+            border: 2px solid grey;
+            width: 400px;
+            height: 250px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Move Image Anywhere On Page</h2>
+
+    <hr />
+    <span>&#128513</span> | <span>&#128514</span>
+    <hr />
+
+    <table>
+        <tr>
+            <td>Date of Birth</td>
+            <td>
+                <input type="text" id="dob" />
+            </td>
+        </tr>
+    </table>
+
+    <img src="Images/smily.png" height="100" width="100" id="smily" />
+
+    <div id="target"></div>
+
+    <div id="modelPopup">
+        <h2>Model Popup Heading</h2>
+        <p>This div content will come as a model popup on the page</p>
+    </div>
+
+
+    <script src="Scripts/jQuery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+    <script>
+        $(function () {
+            $('#smily').draggable();
+
+            $('#target').droppable({
+                drop: function () {
+                    // alert('Smily dropped at target');
+                    $(this).css('background', 'grey');
+                }
+            });
+
+            $('#dob').datepicker({
+                changeMonth: true,
+                changeYear: true,
+                yearRange:'1980:2024'
+            });
+
+            $('img').click(function () {
+                $('#modelPopup').dialog();
+            });
+            
+        });
+    </script>
+
+</body>
+</html>

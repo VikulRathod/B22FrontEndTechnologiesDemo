@@ -69,14 +69,19 @@
   <ItemGroup>
     <Content Include="addelements.html" />
     <Content Include="cssClasses.html" />
+    <Content Include="datatablesnetlib.html" />
     <Content Include="dimensions.html" />
+    <Content Include="draggableImage.html" />
     <Content Include="effects.html" />
     <Content Include="events.html" />
+    <Content Include="filtering.html" />
     <Content Include="getsetattributes.html" />
     <Content Include="getsetcontent.html" />
     <Content Include="intro.html" />
     <Content Include="parents.html" />
+    <Content Include="Scripts\filtering.js" />
     <Content Include="Scripts\jQuery.min.js" />
+    <Content Include="select2lib.html" />
     <Content Include="selectors.html" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -84,6 +89,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\smily.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
