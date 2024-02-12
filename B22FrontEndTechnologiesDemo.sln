@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3_JavaScriptDemos", "3_Java
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4_JQueryDemo", "4_JQueryDemo\4_JQueryDemo.csproj", "{D9A90944-A5D5-4F42-BEB1-447624FE54ED}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{B80C1177-ACB4-40AF-A56F-E4A4E34C4206}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{D9A90944-A5D5-4F42-BEB1-447624FE54ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9A90944-A5D5-4F42-BEB1-447624FE54ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9A90944-A5D5-4F42-BEB1-447624FE54ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B80C1177-ACB4-40AF-A56F-E4A4E34C4206}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B80C1177-ACB4-40AF-A56F-E4A4E34C4206}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B80C1177-ACB4-40AF-A56F-E4A4E34C4206}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B80C1177-ACB4-40AF-A56F-E4A4E34C4206}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
