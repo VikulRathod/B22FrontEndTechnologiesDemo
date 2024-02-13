@@ -69,6 +69,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="addelements.html" />
+    <Content Include="cascadedDropdown.html" />
     <Content Include="cssClasses.html" />
     <Content Include="datatablesnetlib.html" />
     <Content Include="dimensions.html" />
